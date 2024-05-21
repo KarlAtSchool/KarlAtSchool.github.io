@@ -2,7 +2,8 @@
 <html>
     <body>
         <p10>I am the best!!!
-        Karl own this website!</p10>
+        Karl own this website!
+        Please type in password</p10>
         <form>
             <input type="text" id="textbox" name="textbox" value="">
             <input type="button" onclick="onClick()">
@@ -13,8 +14,12 @@
         function onClick(){
             if (input.value == "karl666") {
                 window.location.href = "https://KarlAtSchool.github.io/run/list.html"
-            } else{
+            } else if (input.value == "Debug") {
+                window.location.href = "https://KarlAtSchool.github.io/run/data/view.html"
+            } else {
                 alert("Nope")
+
+                window.locatiom.href = "https://www.google.com"
             }
         }    
     </script>
