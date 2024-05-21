@@ -5,12 +5,15 @@
         Karl own this website!</p10>
         <form>
             <input type="text" id="textbox" name="textbox" value="">
-            <input type="button" onclick="onClick())">
+            <input type="button" onclick="onClick()">
         </form>
     </body>
     <script>
+        var input = document.getElementById("textbox")
         function onClick(){
-            var input = document.getElementById("textbox")
-        }
+            if (input.value == "666") {
+                alert("666")
+            }
+        }    
     </script>
 </html>
