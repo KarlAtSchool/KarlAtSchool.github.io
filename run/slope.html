@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <h3>X1</h3>
+    <input type="number" name="x1" id="x1">
+    <h3>Y1</h3>
+    <input type="number" name="y1" id="y1">
+    <h3>X2</h3>
+    <input type="number" name="x2" id="x2">
+    <h3>Y2</h3>
+    <input type="number" name="y2" id="y2">
+    <button onclick="getSlope">Get Answer</button>
+    <p3 id="answer">Answer: </p3>
+    </body>
+
+    <script>
+        function getSlope(){
+            let x1 = document.getElementById("x1")
+            let y1 = document.getElementById("y1")
+            let x2 = document.getElementById("x2")
+            let y2 = document.getElementById("y2")
+            let num = (y2 - y1) / (x2 - x1)
+            let text = document.getElementById("answer")
+            text.textContent = "Answer: " + num
+        }
+    </script>
+</html>
